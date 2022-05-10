@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+body {
+
+    background-image: url("../images/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.title {
+    font-family: 'Caesar Dressing';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 97px;
+    text-align: center;
+    color: #FEC26A;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #394C70;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-box{
+    background: #DEEAF6;
+box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+border-radius: 50;
+}
+
+.home-nav {
+    font-family: 'Caesar Dressing';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 74px;
+    line-height: 90px;
+    text-align: center;
+
+    color: #394C70;
+    text-decoration: none;
+
+
+}
+
+.nav-container {
+    background: #DEEAF6;
+    border: 10px solid #394C70;
+    border-radius: 59px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 10px 4px 14px 20px rgba(0, 0, 0, 0.25);
+}
