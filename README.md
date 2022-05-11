@@ -18,8 +18,7 @@ Photo here
      - Users can test their knowledge in Greek Mythology 
      - Users can submit their scores and compete with other players
      - Users can turn the music on and off
-<br>
-<br>
+
   - ##  **Design**
     -  **Colour Scheme:**
        All the colours used on the website were sourced from the illoustration used as for the background.<br>
@@ -35,6 +34,7 @@ Photo here
      -   **Imagery** 
           - The illustation used on the background was sourced from [freepik](https://www.freepik.com/home)
             <br>
+          
   - ## **Wireframes-Mockups**
     - [Home Page](assets/images/Wirerames-Mockups/HomePage.jpeg)
     - [Quiz](assets/images/Wirerames-Mockups/Quiz.png)
