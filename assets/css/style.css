@@ -55,7 +55,8 @@ body {
     padding: 10px;
     color: #FEC26A;
     -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color:#394C70;
+    -webkit-text-stroke-color: #394C70;
+    font-size: 300%;
 }
 
 .body {
@@ -81,6 +82,7 @@ body {
     flex-direction: column;
     width: 30%;
     max-width: 200px;
+
 }
 
 .btn {
@@ -98,7 +100,16 @@ body {
     margin: 4% 0;
     cursor: pointer;
     transition: .3s all ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
 
+.correct {
+    background-color: #DEF6E8;
+}
+
+.wrong {
+    background-color: #F6DEDE;
 }
 
 .next {
@@ -127,7 +138,6 @@ body {
 .dark {
     background-color: #394C70;
     padding-bottom: 30px;
-
 }
 
 .progress {
@@ -206,16 +216,30 @@ body {
 .rules p {
     color: #394C70;
     margin: 10px;
-    width:  100%;
+    width: 100%;
     font-family: 'Magra', sans-serif;
 }
 
-.rules a{
-    text-decoration: none;
-    text-align: center;
-    background-color:#FEC26A
+.rules a {
+    background-color: #FEC26A
 }
 
+.end-box {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    max-width: 500px;
+    padding: 5%;
+    background: rgba(222, 234, 246, 0.9);
+    box-shadow: 5px 5px 22px 13px rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+}
 
 @media(max-width:768px) {
     .body {
@@ -227,19 +251,19 @@ body {
         top: 51%;
     }
 
-    .rules{
+    .rules {
         width: 40%;
     }
 }
 
 @media(max-width:500px) {
 
-    .btns
-    {
+    .btns {
         width: 25%;
         top: 53%;
     }
-    .rules{
+
+    .rules {
         width: 70%
     }
 
