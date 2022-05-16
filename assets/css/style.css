@@ -224,7 +224,7 @@ body {
     background-color: #FEC26A
 }
 
-.end-box {
+.end-box, .score-table {
     position: absolute;
     top: 57%;
     left: 50%;
@@ -239,6 +239,7 @@ body {
     background: rgba(222, 234, 246, 0.9);
     box-shadow: 5px 5px 22px 13px rgba(0, 0, 0, 0.24);
     border-radius: 30px;
+    min-height: 40%;
 }
 
 @media(max-width:768px) {
@@ -254,6 +255,7 @@ body {
     .rules {
         width: 40%;
     }
+
 }
 
 @media(max-width:500px) {
@@ -277,4 +279,5 @@ body {
         max-width: 250px;
         margin-top: 10px;
     }
+
 }
