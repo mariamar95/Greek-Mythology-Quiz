@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     background-color: #F7FBFF;
 }
@@ -49,7 +55,7 @@ body {
     padding: 10px;
     color: #FEC26A;
     -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color:#394C70;
 }
 
 .body {
@@ -92,4 +98,159 @@ body {
     margin: 4% 0;
     cursor: pointer;
     transition: .3s all ease-in-out;
+
+}
+
+.next {
+    width: fit-content;
+    padding: 3% 20px;
+    background-color: #fec36a9d;
+}
+
+.choice {
+    margin: 2% 0;
+    padding: 3% 10px;
+    text-align: left;
+    font-family: 'Magra', sans-serif;
+    min-width: 150px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px -2px black;
+}
+
+.opacity img {
+    opacity: .4;
+}
+
+.dark {
+    background-color: #394C70;
+    padding-bottom: 30px;
+
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Magra', sans-serif;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.progressbar {
+    position: relative;
+    flex: 1;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.indicator {
+    background-color: #FEC26A;
+    padding: 5px;
+    width: 10%;
+
+}
+
+.text {
+    font-weight: 800;
+    color: whitesmoke;
+    font-family: 'Magra', sans-serif;
+    margin-top: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.rules {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    max-width: 500px;
+    background: #DEEAF6;
+    border: 5px solid #394C70;
+    border-radius: 28px;
+    padding: 5%;
+}
+
+.rules h2 {
+    font-family: 'Caesar Dressing', cursive;
+    font-weight: 400;
+    text-align: center;
+    color: #394C70;
+    margin: 5px;
+    width: 100%;
+}
+
+.rules p {
+    color: #394C70;
+    margin: 10px;
+    width:  100%;
+    font-family: 'Magra', sans-serif;
+}
+
+.rules a{
+    text-decoration: none;
+    text-align: center;
+    background-color:#FEC26A
+}
+
+
+@media(max-width:768px) {
+    .body {
+        margin-top: -22%;
+    }
+
+    .btns {
+        width: 25%;
+        top: 51%;
+    }
+
+    .rules{
+        width: 40%;
+    }
+}
+
+@media(max-width:500px) {
+
+    .btns
+    {
+        width: 25%;
+        top: 53%;
+    }
+    .rules{
+        width: 70%
+    }
+
+    .progress {
+        flex-direction: column;
+    }
+
+    .progressbar {
+        width: 100%;
+        order: 2;
+        max-width: 250px;
+        margin-top: 10px;
+    }
 }
