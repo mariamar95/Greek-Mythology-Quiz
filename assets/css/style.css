@@ -165,6 +165,7 @@ body {
     font-weight: 500;
 }
 
+/*
 .progressbar {
     position: relative;
     flex: 1;
@@ -173,12 +174,28 @@ body {
     overflow: hidden;
 }
 
-.indicator {
+.progressBarFull {
     background-color: #FEC26A;
     padding: 5px;
     width: 10%;
+} 
+*/
 
+.progressBar {
+    position: relative;
+    flex: 1;
+    width: 15rem;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: whitesmoke;
 }
+
+.progressBarFull {
+    height: 100%;
+    background-color: #FEC26A;
+    width: 0%;
+} 
 
 .text {
     font-weight: 800;
