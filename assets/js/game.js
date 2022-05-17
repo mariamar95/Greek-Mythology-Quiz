@@ -1,5 +1,5 @@
 const question = document.querySelector("#question");
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+const choices = Array.from(document.getElementsByClassName('choice'));
 const scoreText = document.querySelector("#score");
 const progressBarFull = document.querySelector("#prpgressBarFull");
 
@@ -132,7 +132,7 @@ let questions = [{
     },
 ];
 
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 5;
 
 startGame = () => {
@@ -146,37 +146,39 @@ startGame = () => {
 -If you reach the maximum questions it takes you to the end page
 -Loads up a random question that didn't come up before during this game
 -Load up the answers to the question
--Updates the progres bar*/
+-Updates the progress bar*/
 getNextQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign("../end/html");
+        return window.location.assign("./end.html");
     };
 
-    questionCounter++ ;
+    questionCounter++;
+    /*
     progressBarFull.style.width = `{(questionCounter/MAX_QUESTIONS) * 100}%`;
-
+*/
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerHTML = currentQuestion.question;
+    question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innerHTML = currentQuestion['choice' + number];
+        choice.innerText = currentQuestion['choice' + number];
     })
 
     availableQuestions.slice(questionsIndex, 1);
-    acceptingAnsweres = true;
+    acceptingAnswers = true;
 };
 
 /* 
 Changes the answer button to green or red for right or wrong answer
 Increments the score if the answer is correct*/
-choices = () => {
-
-}
+choices.forEach(choice => {
+    
+});
 
 // Updates the score every time a user asnwers a question
 incrementScore = () => {
 
 };
+

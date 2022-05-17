@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body onload="startGame()">
     <div class="main">
         <div class="section">
             <div class="header">
@@ -20,7 +20,7 @@
                         </div>
                         <div class="info">
                             <h4>SCORE:</h4>
-                            <p id="score">10</p>
+                            <p id="score">0</p>
                         </div>
                     </div>
                     <p class="text" id="question">
@@ -31,16 +31,16 @@
             <div class="body opacity">
                 <img src="./assets/images/bg-image.jpg" alt="img">
                 <div class="btns">
-                    <button class="btn choice choice-text wrong" data-numb="1">A. Answer</button>
-                    <button class="btn choice choice-text correct" data-numb="2">B. Answer</button>
-                    <button class="btn choice choice-text" data-numb="3">C. Answer</button>
-                    <button class="btn choice choice-text" data-numb="4">D. Answer</button>
-                    <button class="btn next">NEXT</button>
+                    <button class="btn choice" data-number="1">A. Answer</button>
+                    <button class="btn choice" data-number="2">B. Answer</button>
+                    <button class="btn choice" data-number="3">C. Answer</button>
+                    <button class="btn choice" data-number="4">D. Answer</button>
+                    <button class="btn next" onclick="getNextQuestion()">NEXT</button>
                 </div>
             </div>
         </div>
     </div>
-    <script></script>
+    <script src="./assets/js/game.js"></script>
 </body>
 
 </html>
