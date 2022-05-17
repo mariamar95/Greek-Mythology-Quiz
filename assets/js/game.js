@@ -8,6 +8,7 @@ let currentQuestion = {};
 let score = 0;
 let availableQuestions = [];
 let questionCounter = 0;
+let acceptingAnswers = true;
 
 let questions = [{
         question: 'What is the name of the Greek goddess of the earth?',
@@ -143,9 +144,29 @@ startGame = () => {
 
 /* Shows a new question 
 -If you reach the maximum questions it takes you to the end page
--Loads up a random question that didn't come up before during this game*/
+-Loads up a random question that didn't come up before during this game
+-Load up the answers to the question
+-Updates the progres bar*/
 getNextQuestion = () => {
-    
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign("../end/html");
+    };
+
+    questionCounter++ ;
+    progressBarFull.style.width = `{(questionCounter/MAX_QUESTIONS) * 100}%`;
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerHTML = currentQuestion.question;
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number'];
+        choice.innerHTML = currentQuestion['choice' + number];
+    })
+
+    availableQuestions.slice(questionsIndex, 1);
+    acceptingAnsweres = true;
 };
 
 /* 
