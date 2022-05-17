@@ -1,3 +1,10 @@
+const question = document.querySelector("#question");
+const choices = Array.from(document.getElementsByClassName('choice-text'));
+const scoreText = document.querySelector("#score");
+const progressBarFull = document.querySelector("#prpgressBarFull");
+
+
+
 let questions = [{
     question: 'What is the name of the Greek goddess of the earth?',
     choice1: 'Gaea',
@@ -119,3 +126,28 @@ let questions = [{
     answer: 1,
 },
 ];
+
+
+
+startGame = () => {
+
+};
+
+/* Shows a new question 
+-If you reach the maximum questions it takes you to the end page
+-Loads up a random question that didn't come up before during this game*/ 
+getNextQuestion = () => {
+
+};
+
+/* 
+Changes the answer button to green or red for right or wrong answer
+Increments the score if the answer is correct*/
+choices = () => {
+
+}
+
+// Updates the score every time a user asnwers a question
+incrementScore = () => {
+
+};
