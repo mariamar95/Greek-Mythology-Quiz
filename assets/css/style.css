@@ -148,7 +148,6 @@ body {
     align-items: center;
     width: 100%;
     max-width: 320px;
-
 }
 
 .info {
@@ -165,22 +164,6 @@ body {
     font-weight: 500;
 }
 
-/*
-.progressbar {
-    position: relative;
-    flex: 1;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.progressBarFull {
-    background-color: #FEC26A;
-    padding: 5px;
-    width: 10%;
-} 
-*/
-
 .progressBar {
     position: relative;
     flex: 1;
@@ -195,7 +178,7 @@ body {
     height: 100%;
     background-color: #FEC26A;
     width: 0%;
-} 
+}
 
 .text {
     font-weight: 800;
@@ -243,7 +226,8 @@ body {
     background-color: #FEC26A
 }
 
-.end-box, .score-table {
+.end-box,
+.score-table {
     position: absolute;
     top: 57%;
     left: 50%;
