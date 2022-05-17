@@ -1,6 +1,6 @@
 const question = document.querySelector("#question");
 const choices = Array.from(document.getElementsByClassName('choice'));
-const scoreText = document.querySelector("#score");
+const scoreText = document.querySelector(".score");
 const progressBarFull = document.querySelector("#prpgressBarFull");
 
 
@@ -174,11 +174,33 @@ getNextQuestion = () => {
 Changes the answer button to green or red for right or wrong answer
 Increments the score if the answer is correct*/
 choices.forEach(choice => {
-    
+    choice.addEventListener('click', e => {
+        if (!acceptingAnswers) return
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        if (classToApply === 'correct') {
+            incrementScore(SCORE_POINTS);
+        };
+        selectedChoice.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.classList.remove(classToApply);
+            getNextQuestion();
+        }, 1000);
+
+
+    });
 });
 
 // Updates the score every time a user asnwers a question
-incrementScore = () => {
-
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
 };
 
+startGame();
