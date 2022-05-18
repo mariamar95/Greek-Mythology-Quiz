@@ -15,7 +15,7 @@
             <div class="header">
                 <div class="hero">
                     <h1 class="title">Your score is</h1>
-                    <h2 class="title score"></h2>
+                    <h2 id="finalScore" class="title score"></h2>
                 </div>
             </div>
             <div class="body">
@@ -23,7 +23,7 @@
                 <div class="end-box">
                     <form action="">
                         <input type="text" name="username" id="username" class="btn" placeholder="Insert username">
-                        <button type="submit" class="btn" id="saveScoreBtn" onclick="">Save</button>
+                        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
                     </form>
                     <a class="btn" href="./quiz.html">Play Again</a>
                     <a class="btn" href="./index.html">Home</a>
@@ -31,7 +31,8 @@
             </div>
         </div>
     </div>
-    <script src="./assets/js/game.js"></script>
+    
+    <script src="./assets/js/end.js"></script>
 </body>
 
 </html>

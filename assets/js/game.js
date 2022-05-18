@@ -165,7 +165,7 @@ getNextQuestion = () => {
         choice.innerText = currentQuestion['choice' + number];
     })
 
-    availableQuestions.slice(questionsIndex, 1);
+    availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 };
 
