@@ -244,6 +244,13 @@ body {
     min-height: 40%;
 }
 
+.high-score {
+    color: #394C70;
+    font-family: 'Magra', sans-serif;
+    font-size: x-large;
+    margin-bottom: 1vh;
+}
+
 @media(max-width:768px) {
     .body {
         margin-top: -22%
@@ -261,7 +268,7 @@ body {
 }
 
 @media(max-width:500px) {
-    .body{
+    .body {
         transform: scale(1.4);
         margin: auto;
     }
@@ -275,10 +282,12 @@ body {
         width: 70%
     }
 
-    .end-box{
+    .end-box,
+    .score-table {
         width: 50%;
         top: 25vh;
     }
+
     .progress {
         flex-direction: column;
     }
@@ -290,4 +299,9 @@ body {
         margin-top: 10px;
     }
 
-}
+    .high-score {
+        font-size: small;
+    }
+    .score-table a{
+        transform: scale(0.6);
+    }
