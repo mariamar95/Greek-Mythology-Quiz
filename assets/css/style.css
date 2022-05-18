@@ -155,7 +155,7 @@ body {
     align-items: center;
     font-family: 'Magra', sans-serif;
     color: whitesmoke;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .info p {
@@ -203,6 +203,7 @@ body {
     border: 5px solid #394C70;
     border-radius: 28px;
     padding: 5%;
+
 }
 
 .rules h2 {
@@ -279,7 +280,8 @@ body {
     }
 
     .rules {
-        width: 70%
+        width: 65%;
+        top: 40%;
     }
 
     .end-box,
@@ -288,9 +290,7 @@ body {
         top: 25vh;
     }
 
-    .progress {
-        flex-direction: column;
-    }
+    .progress {}
 
     .progressbar {
         width: 100%;
@@ -302,6 +302,13 @@ body {
     .high-score {
         font-size: small;
     }
-    .score-table a{
+
+    .score-table a {
         transform: scale(0.6);
     }
+
+    .text {
+        font-size: 2.4vh;
+        
+    }
+}
