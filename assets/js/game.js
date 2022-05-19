@@ -2,6 +2,8 @@ const question = document.querySelector("#question");
 const choices = Array.from(document.getElementsByClassName('choice'));
 const scoreText = document.querySelector(".score");
 const progressBarFull = document.querySelector(".progressBarFull");
+const buttonParent = document.querySelector('.btns');
+const timer = document.querySelector('.timer');
 
 
 let currentQuestion = {};
@@ -148,6 +150,8 @@ startGame = () => {
 -Load up the answers to the question
 -Updates the progress bar*/
 getNextQuestion = () => {
+    let counter = 10;
+
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         return window.location.assign("./end.html");
@@ -155,10 +159,13 @@ getNextQuestion = () => {
 
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
     questionCounter++;
-    
+
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
+
+    let correctAnswerIndex = currentQuestion.answer;
+    let correctButton = document.querySelector("[data-number='" + correctAnswerIndex + "']");
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
@@ -167,6 +174,25 @@ getNextQuestion = () => {
 
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
+
+    setTimeout(() => {
+        getNextQuestion();
+        correctButton.classList.remove('correct', 'disabled');
+        buttonParent.classList.remove('disabled');
+    }, 15000);
+
+    setTimeout(() => {
+        correctButton.classList.add('correct');
+        buttonParent.classList.add('disabled');
+    }, 10000);
+
+    setInterval(() => {
+        counter--;
+        if (counter == 0) {
+            clearInterval;
+        }
+        timer.innerHTML = counter;
+    }, 1000);
 };
 
 /* 

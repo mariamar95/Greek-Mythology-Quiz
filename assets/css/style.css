@@ -252,6 +252,10 @@ body {
     margin-bottom: 1vh;
 }
 
+.disabled button {
+    pointer-events: none !important;
+}
+
 @media(max-width:768px) {
     .body {
         margin-top: -22%
@@ -265,53 +269,54 @@ body {
     .rules {
         width: 40%;
     }
-.body img{
-transform: scale(1.2);
-margin-top: 8%;
-}
+
+    .body img {
+        transform: scale(1.2);
+        margin-top: 8%;
+    }}
 
 
-@media(max-width:500px) {
-    .body {
-        transform: scale(1.4);
-        margin: auto;
+    @media(max-width:500px) {
+        .body {
+            transform: scale(1.4);
+            margin: auto;
+        }
+
+        .btns {
+            width: 55%;
+            top: 60%;
+        }
+
+        .rules {
+            width: 65%;
+            top: 40%;
+        }
+
+        .end-box,
+        .score-table {
+            width: 50%;
+            top: 25vh;
+        }
+
+        .progress {}
+
+        .progressbar {
+            width: 100%;
+            order: 2;
+            max-width: 250px;
+            margin-top: 10px;
+        }
+
+        .high-score {
+            font-size: small;
+        }
+
+        .score-table a {
+            transform: scale(0.6);
+        }
+
+        .text {
+            font-size: 2.4vh;
+
+        }
     }
-
-    .btns {
-        width: 55%;
-        top: 60%;
-    }
-
-    .rules {
-        width: 65%;
-        top: 40%;
-    }
-
-    .end-box,
-    .score-table {
-        width: 50%;
-        top: 25vh;
-    }
-
-    .progress {}
-
-    .progressbar {
-        width: 100%;
-        order: 2;
-        max-width: 250px;
-        margin-top: 10px;
-    }
-
-    .high-score {
-        font-size: small;
-    }
-
-    .score-table a {
-        transform: scale(0.6);
-    }
-
-    .text {
-        font-size: 2.4vh;
-        
-    }
-}
