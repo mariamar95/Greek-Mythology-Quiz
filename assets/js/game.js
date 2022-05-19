@@ -5,7 +5,6 @@ const progressBarFull = document.querySelector(".progressBarFull");
 const buttonParent = document.querySelector('.btns-container');
 const timer = document.querySelector('.timer');
 
-
 let currentQuestion = {};
 let score = 0;
 let availableQuestions = [];
@@ -149,10 +148,20 @@ startGame = () => {
 -If you reach the maximum questions it takes you to the end page
 -Loads up a random question that didn't come up before during this game
 -Load up the answers to the question
--Updates the progress bar*/
+-Updates the progress bar
+-Sets a timer when the question loads up
+-Disables buttons when the timer goes off
+-Show the correct asnwer when the timer goes off
+-Shuffels the answers so that they don't show up on the same button*/
 getNextQuestion = () => {
     //clearing all intervals and timeouts from the previous question
     if (timerInterval)(clearInterval(timerInterval), clearTimeout(questionTimeoutOne), clearTimeout(questionTimeoutTwo));
+
+    //shuffling the answers
+    for (var i = choices.length; i >= 0; i--) {
+        buttonParent.appendChild(choices[Math.random() * i | 0]);
+    }
+
     let counter = 10;
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -189,6 +198,7 @@ getNextQuestion = () => {
         correctButton.classList.add("correct");
         buttonParent.classList.add("disabled");
     }, 10000)
+
     //timer interval changes after every 1s
     timerInterval = setInterval(() => {
         counter--;
@@ -221,8 +231,6 @@ choices.forEach(choice => {
             selectedChoice.classList.remove(classToApply);
             getNextQuestion();
         }, 1000);
-
-
     });
 });
 

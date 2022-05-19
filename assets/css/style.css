@@ -287,6 +287,11 @@ body {
         transform: scale(1.2);
         margin-top: 8%;
     }
+
+    .btns-container button:focus {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px -2px black;
+    }
 }
 
 
@@ -311,8 +316,6 @@ body {
         width: 50%;
         top: 25vh;
     }
-
-    .progress {}
 
     .progressbar {
         width: 100%;
