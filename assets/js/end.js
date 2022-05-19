@@ -35,5 +35,5 @@ saveHighScore = e => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
-    window.location.assign('Greek-Mythology-Quiz/leaderboard.html');
+    window.location.assign('leaderboard.html');
 }
