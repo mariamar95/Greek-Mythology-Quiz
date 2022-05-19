@@ -265,8 +265,11 @@ body {
     .rules {
         width: 40%;
     }
-
+.body img{
+transform: scale(1.2);
+margin-top: 8%;
 }
+
 
 @media(max-width:500px) {
     .body {
