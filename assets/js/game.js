@@ -2,7 +2,7 @@ const question = document.querySelector("#question");
 const choices = Array.from(document.getElementsByClassName('choice'));
 const scoreText = document.querySelector(".score");
 const progressBarFull = document.querySelector(".progressBarFull");
-const buttonParent = document.querySelector('.btns');
+const buttonParent = document.querySelector('.btns-container');
 const timer = document.querySelector('.timer');
 
 
@@ -11,6 +11,7 @@ let score = 0;
 let availableQuestions = [];
 let questionCounter = 0;
 let acceptingAnswers = true;
+let timerInterval, questionTimeoutOne, questionTimeoutTwo;
 
 let questions = [{
         question: 'What is the name of the Greek goddess of the earth?',
@@ -150,6 +151,8 @@ startGame = () => {
 -Load up the answers to the question
 -Updates the progress bar*/
 getNextQuestion = () => {
+    //clearing all intervals and timeouts from the previous question
+    if (timerInterval)(clearInterval(timerInterval), clearTimeout(questionTimeoutOne), clearTimeout(questionTimeoutTwo));
     let counter = 10;
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -175,21 +178,22 @@ getNextQuestion = () => {
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 
-    setTimeout(() => {
-        getNextQuestion();
-        correctButton.classList.remove('correct', 'disabled');
-        buttonParent.classList.remove('disabled');
+    //timeouts for the current question's processes after 15s and 10s respectively
+    questionTimeoutOne = setTimeout(() => {
+        getNextQuestion()
+        correctButton.classList.remove("correct");
+        buttonParent.classList.remove("disabled");
     }, 15000);
 
-    setTimeout(() => {
-        correctButton.classList.add('correct');
-        buttonParent.classList.add('disabled');
-    }, 10000);
-
-    setInterval(() => {
+    questionTimeoutTwo = setTimeout(() => {
+        correctButton.classList.add("correct");
+        buttonParent.classList.add("disabled");
+    }, 10000)
+    //timer interval changes after every 1s
+    timerInterval = setInterval(() => {
         counter--;
         if (counter == 0) {
-            clearInterval;
+            clearInterval(timerInterval);
         }
         timer.innerHTML = counter;
     }, 1000);

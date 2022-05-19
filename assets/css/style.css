@@ -73,6 +73,7 @@ body {
     width: 100%;
 }
 
+.positioned-container,
 .btns {
     position: absolute;
     top: 51%;
@@ -84,6 +85,18 @@ body {
     flex-direction: column;
     width: 30%;
     max-width: 200px;
+}
+
+.timer-container {
+    padding-top: 10px;
+}
+
+.timer {
+    display: inline-flex;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn {
@@ -273,50 +286,51 @@ body {
     .body img {
         transform: scale(1.2);
         margin-top: 8%;
-    }}
-
-
-    @media(max-width:500px) {
-        .body {
-            transform: scale(1.4);
-            margin: auto;
-        }
-
-        .btns {
-            width: 55%;
-            top: 60%;
-        }
-
-        .rules {
-            width: 65%;
-            top: 40%;
-        }
-
-        .end-box,
-        .score-table {
-            width: 50%;
-            top: 25vh;
-        }
-
-        .progress {}
-
-        .progressbar {
-            width: 100%;
-            order: 2;
-            max-width: 250px;
-            margin-top: 10px;
-        }
-
-        .high-score {
-            font-size: small;
-        }
-
-        .score-table a {
-            transform: scale(0.6);
-        }
-
-        .text {
-            font-size: 2.4vh;
-
-        }
     }
+}
+
+
+@media(max-width:500px) {
+    .body {
+        transform: scale(1.4);
+        margin: auto;
+    }
+
+    .btns {
+        width: 55%;
+        top: 60%;
+    }
+
+    .rules {
+        width: 65%;
+        top: 40%;
+    }
+
+    .end-box,
+    .score-table {
+        width: 50%;
+        top: 25vh;
+    }
+
+    .progress {}
+
+    .progressbar {
+        width: 100%;
+        order: 2;
+        max-width: 250px;
+        margin-top: 10px;
+    }
+
+    .high-score {
+        font-size: small;
+    }
+
+    .score-table a {
+        transform: scale(0.6);
+    }
+
+    .text {
+        font-size: 2.4vh;
+
+    }
+}
