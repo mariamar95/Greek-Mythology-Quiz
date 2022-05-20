@@ -41,8 +41,17 @@ Photo here
     - [End of Quiz](assets/images/Wirerames-Mockups/EndOfQuiz.png)
     - [Scores](assets/images/Wirerames-Mockups/Scores.png)
     - [Info](assets/images/Wirerames-Mockups/Info.png)
- 
+----- 
 
-
-
+# **Feautures**
+ ## **Existing features**
+ - ### Home Page
+   - **Quiz Title:** Users can easily understad what the quiz is about
+   - **Start Button:** Users can clik on the quiz button and start the game
+   - **Info Button:** Users can find information on how to play the game
+   - **Score Button:** Users can find a leaderboard with the highest scores  
+  - ### Quiz Page
+    -  **Question:** Displayed at the top of the screen
+    -  **Progress Bar:** Displayed at the top part of the screen and above the question. Users can tell what percentage of the quiz they have completed so far
+    -  **Answer Buttons:** Users can select their answer. If the answer is correct 10 points will be added on the score and the button will turn green. If the asnwer is wrong the button turns red. 
 
