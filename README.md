@@ -53,5 +53,39 @@ Photo here
   - ### Quiz Page
     -  **Question:** Displayed at the top of the screen
     -  **Progress Bar:** Displayed at the top part of the screen and above the question. Users can tell what percentage of the quiz they have completed so far
+    -  **Score:** Displayed at the top of the screen and next to the progress bar. Users start with 0 points and get 10 points for each correct question. The score is updated when the user selects the answer.
     -  **Answer Buttons:** Users can select their answer. If the answer is correct 10 points will be added on the score and the button will turn green. If the asnwer is wrong the button turns red. 
+    -  **Timer:** Users have 10 seconds to select their answer. The timer starts as soon as the qustion appears on the screen. If no answer is selected when the timers goes off, the correct answer goes green.
+  - ### End Page
+    - **Final Score:** Displayed at the top of the screen. Users know what is the total number of points they collected during the game.
+    - **Username Input & Save Button:** Users have the option to select a username and save their score
+    - **Play Again Button:** Users have the option to restart the quiz for this page by clicking on the "Play Again" button.
+    - **Home Button:** Redirects users to the home page
+ - ### Info Page
+   - This page includes instructions on how to play the game and a "BACK" button that takes to back to the home page
+ - ### Scores Page
+    - This page includes a table with the top 5 scores and a button that takes you back to the home page.
+
+## **Features left to implement in the future**
+ - Add background music
+ - Add sound effectes when when user selectes an answer (different sound for right and wrong answer).
+ - Add 50-50 Help Button. Disables 2 of the 3 wrong answers. User has to select from 2 answers only.
+ - ---
+ # **Technologies used**
+ -  **Languages Used**
+    - HTML: Strature language
+    - CSS: Style language 
+    - JavaScript: Programming language
+- **Gitpod:** Used to develop the project
+- **Git:** Used to commit and push to GitHub
+- **GitHub:** Used to host the project
+- **GitHub Pages:** Used to deploy the project
+- **Google Fonts:** Used for the fonts of the project
+- **Figma:** Used to create mockups for the project
+  </br> 
+- ##  **Testing and Validation**
+   - **W3C Markup Validation** Check whether there are any errors in the HTML code.
+   - **Autoprefixer** Parses CSS and adds vendor prefixes
+   - **W3C CSS Validator** Used to check if there were any errors in the CSS code.
+   - **JShint** Used to check if there are any erros in JavaScript code.
 
