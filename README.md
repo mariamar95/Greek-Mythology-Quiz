@@ -82,10 +82,9 @@ Photo here
 - **GitHub Pages:** Used to deploy the project
 - **Google Fonts:** Used for the fonts of the project
 - **Figma:** Used to create mockups for the project
-  </br> 
+  </br> <br>
 - ##  **Testing and Validation**
    - **W3C Markup Validation** Check whether there are any errors in the HTML code.
    - **Autoprefixer** Parses CSS and adds vendor prefixes
    - **W3C CSS Validator** Used to check if there were any errors in the CSS code.
    - **JShint** Used to check if there are any erros in JavaScript code.
-
