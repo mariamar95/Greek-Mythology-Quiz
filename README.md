@@ -8,9 +8,9 @@ This Website created as part of my Level 5 Web App Develomplent with Code Instit
 Create a Quiz Game responsive on smartphones, tablets, desktops and laptops where players can test their knowledge in Greek Mythology.
  
 
-Photo here
+![home page screenshoot](assets/images/home_scr.png)
 
---------
+----
 # **User Experience (UX)**
    - ##  **User stories**
      - Users can find information on how to play the game
@@ -40,8 +40,7 @@ Photo here
     - [End of Quiz](assets/images/Wirerames-Mockups/EndOfQuiz.png)
     - [Scores](assets/images/Wirerames-Mockups/Scores.png)
     - [Info](assets/images/Wirerames-Mockups/Info.png)
------ 
-
+--- 
 # **Feautures**
  ## **Existing features**
  - ### Home Page
@@ -90,7 +89,7 @@ Photo here
   
 ---
 # **Testing**
-  - The testing process can be found [here]().
+  - The testing process can be found [here](https://github.com/mariamar95/Greek-Mythology-Quiz/blob/main/TESTING.md).
   <br>
 
 ---
@@ -114,3 +113,9 @@ Photo here
  4. Open GitPod
  5. Type 'git clone' and paste the URL link
  6. Find more [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+---
+# **Credits**
+- [freepik](https://www.freepik.com/)-Background Illustration 
+- [Britannica](https://www.britannica.com/)-Questions and Ansers
+- [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)-Coding Videos
+- [Brian Design](https://www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A)-Coding Videos
