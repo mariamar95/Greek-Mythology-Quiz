@@ -17,7 +17,6 @@ Photo here
      - Users can play the Quiz
      - Users can test their knowledge in Greek Mythology 
      - Users can submit their scores and compete with other players
-     - Users can turn the music on and off
 
   - ##  **Design**
     -  **Colour Scheme:**
@@ -88,3 +87,30 @@ Photo here
    - **Autoprefixer** Parses CSS and adds vendor prefixes
    - **W3C CSS Validator** Used to check if there were any errors in the CSS code.
    - **JShint** Used to check if there are any erros in JavaScript code.
+  
+---
+# **Testing**
+  - The testing process can be found [here]().
+  <br>
+
+---
+# **Deployment**
+## **GitHub Pages**
+### The website is deployed using GitHub pages. It automatically updates new commits as they are pushed to the repository.
+
+**How I deployed the website on GitHub Pages**
+ 1. Login to my GitHub account
+ 2. Open the 'Greek-Mythology-Quiz' repository
+ 3. Click on Settings
+ 4. Scroll down and click on the Pages tab located on the left of the screen
+ 5. Under 'Source' select the main branch
+ 6. Wait for the page to refresh
+ 7. Scroll down to and locate the website link under the 'GitHub Pages' section
+
+**Cloning the repository**
+ 1. Open the repository
+ 2. Click the Code button above the list of files
+ 3. Click on GitHub CLI and click on the 'copy' button to copy the URL link
+ 4. Open GitPod
+ 5. Type 'git clone' and paste the URL link
+ 6. Find more [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
