@@ -10,6 +10,8 @@
 
 - [CSS Validator:](https://jigsaw.w3.org/css-validator/validator) No errors.
    - ![css validator](assets/testing/validator/css/cssvalidator.png)
+- [JSHint](https://jshint.com/)
+  - No errors found, 36 warnings
 ---
 ## **Performace**
 ---
@@ -37,7 +39,6 @@ The Quiz works well on all tested broswers
 ---
 ## **Testing User Stories**
 ---
-
 - Users can find information on how to play the game
     - There is an "INFO" button located on the home page which directs you a different page where users can find information on how to play the game.
 - Users can play the Quiz
@@ -50,7 +51,7 @@ The Quiz works well on all tested broswers
 ---
 ## **Manual Testing & Bugs**
 ---
-I have manually tested all the functions.
+I have manually tested all JS functions and the quiz works as expected.
  
 **Bugs**
 - Using a smart device: When users select one of the answers, the button becomes bigger. When the next page loads the button selected from the previous answer is still bigger. This has not been fixed but it does not affect any other functions of the game. This bug only affects touch screen users.

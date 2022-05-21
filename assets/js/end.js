@@ -24,16 +24,16 @@ saveHighScore = e => {
     const score = {
         score: mostRecentScore,
         name: username.value
-    }
+    };
 
     highScores.push(score);
 
     highScores.sort((a,b) => {
-    return b.score - a.score});
+    return b.score - a.score;});
 
     highScores.splice(MAX_HIGH_SCORES);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
     window.location.assign('leaderboard.html');
-}
+};

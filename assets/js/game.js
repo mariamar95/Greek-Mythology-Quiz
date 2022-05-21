@@ -180,16 +180,16 @@ getNextQuestion = () => {
     let correctButton = document.querySelector("[data-number='" + correctAnswerIndex + "']");
 
     choices.forEach(choice => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
-    })
+    });
 
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 
     //timeouts for the current question's processes after 15s and 10s respectively
     questionTimeoutOne = setTimeout(() => {
-        getNextQuestion()
+        getNextQuestion();
         correctButton.classList.remove("correct");
         buttonParent.classList.remove("disabled");
     }, 15000);
@@ -197,7 +197,7 @@ getNextQuestion = () => {
     questionTimeoutTwo = setTimeout(() => {
         correctButton.classList.add("correct");
         buttonParent.classList.add("disabled");
-    }, 10000)
+    }, 10000);
 
     //timer interval changes after every 1s
     timerInterval = setInterval(() => {
@@ -214,11 +214,11 @@ Changes the answer button to green or red for right or wrong answer
 Increments the score if the answer is correct*/
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if (!acceptingAnswers) return
+        if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
