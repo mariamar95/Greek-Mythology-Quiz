@@ -13,7 +13,7 @@ finalScore.innerText = mostRecentScore;
 
 //disables the save button if the username input is empty
 username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value
+    saveScoreBtn.disabled = !username.value;
 });
 
 

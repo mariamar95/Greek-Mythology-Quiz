@@ -155,7 +155,10 @@ startGame = () => {
 -Shuffels the answers so that they don't show up on the same button*/
 getNextQuestion = () => {
     //clearing all intervals and timeouts from the previous question
-    if (timerInterval)(clearInterval(timerInterval), clearTimeout(questionTimeoutOne), clearTimeout(questionTimeoutTwo));
+    if(timerInterval) {
+        clearInterval(timerInterval);
+        clearTimeout(questionTimeoutOne);
+        clearTimeout(questionTimeoutTwo);}
 
     //shuffling the answers
     for (var i = choices.length; i >= 0; i--) {

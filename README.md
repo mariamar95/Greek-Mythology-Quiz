@@ -20,15 +20,15 @@ Create a Quiz Game responsive on smartphones, tablets, desktops and laptops wher
 
   - ##  **Design**
     -  **Colour Scheme:**
-       All the colours used on the website were sourced from the illoustration used as for the background.<br>
+       All the colours used on the website were sourced from the illustration that is used on the background of the quiz.<br>
          - **#F7FBFF** : Off-white used to as background. Covers the parts that the illustration does not cover.<br>
          - **#DEEAF6**: Light blue, used as background colour on some parts of the page like buttons and heading.<br>
          - **#394C70**: Dark blue, used for text and border. <br>
          - **#FEC26A**: Gold yellow, used on text and icons on the website.    
         <br>
      -  **Typography:** The website used 2 fonts <br>
-          - **Caesar Dressing**: Used for headings a titles. The font was chosen as it aligns with the websites them which is Greek Mythology.
-          - **Magra** : Used for all the rest of the website such as questions and instractions. The Caesar Dressing Font can be hard to read on long texts. The Magra font is used which is easier to read on longer text.
+          - **Caesar Dressing**: Used for headings and titles. The font was chosen as it aligns with the website's style which is Greek Mythology.
+          - **Magra** : Used for all the rest of the website such as questions and instractions. The Caesar Dressing Font can be hard to read on long pieces of text, that is when the Magra font is used instead.
          <br>
      -   **Imagery** 
           - The illustation used on the background was sourced from [freepik](https://www.freepik.com/home)
@@ -45,7 +45,7 @@ Create a Quiz Game responsive on smartphones, tablets, desktops and laptops wher
  ## **Existing features**
  - ### Home Page
    - **Quiz Title:** Users can easily understad what the quiz is about
-   - **Start Button:** Users can clik on the quiz button and start the game
+   - **Start Button:** Users can click on the quiz button and start the game
    - **Info Button:** Users can find information on how to play the game
    - **Score Button:** Users can find a leaderboard with the highest scores  
   - ### Quiz Page
@@ -60,7 +60,7 @@ Create a Quiz Game responsive on smartphones, tablets, desktops and laptops wher
     - **Play Again Button:** Users have the option to restart the quiz for this page by clicking on the "Play Again" button.
     - **Home Button:** Redirects users to the home page
  - ### Info Page
-   - This page includes instructions on how to play the game and a "BACK" button that takes to back to the home page
+   - This page includes instructions on how to play the game and a "BACK" button that takes users back to the home page.
  - ### Scores Page
     - This page includes a table with the top 5 scores and a button that takes you back to the home page.
 
@@ -116,6 +116,6 @@ Create a Quiz Game responsive on smartphones, tablets, desktops and laptops wher
 ---
 # **Credits**
 - [freepik](https://www.freepik.com/)-Background Illustration 
-- [Britannica](https://www.britannica.com/)-Questions and Ansers
+- [Britannica](https://www.britannica.com/)-Quiz Questions and Answers 
 - [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)-Coding Videos
 - [Brian Design](https://www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A)-Coding Videos
